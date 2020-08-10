@@ -1,0 +1,46 @@
+<!--type html:5 and press enter u ll get full code-->
+<!-- is used to make site reponsive in mobile as well,meta gives info abt site and device-width makes site fit in screen,scale down scales a s per device type-->
+<!-- no action form only id bcoz its not needed-->
+<!--we placed placeholder ,placeholder by defaults displays the one we typed in background,once we type it goes off-->
+<!--autocomplete is off means,it disables suggestions-->
+<!--autofocus so that the mouse cursor automatically goes on text box instead of manually taking it there-->
+<!--notes are ntng but unordered list-->
+<!--if same folder path style.css if in some other folder like css named folder then href="/css/style.css"-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='manifest' href='manifest.json' />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stick It notes</title>
+</head>
+<body>
+    <div id="heading">
+        <h1>Stick-It-notes-Shivasai</h1>
+        <p id="ts">By Shivasai</p>
+    </div>
+    <div id="form">
+        <form id="inputForm">
+<input type="text" name="title" id="new-note-title-input" class="inputText" placeholder="typeTitle" autocomplete="off" autofocus/>
+<input type="text" name="content" id="new-note-body-input" class="inputText" placeholder="typeContent" autocomplete="off" />
+<button type="submit" class="btn">Create Note</button>
+        </form>
+    </div>
+
+    <h3 id="no-notes">No notes to show</h3>
+<ul id="notes">
+   <!-- <li>
+        <a href="#">
+            <h2>some notes</h2>
+            <button class="delete">X</button>
+            <p>content of note</p>
+        </a>
+    </li> -->   <!--template added initially for practice purpose to design js and undrtsand childs-->
+</ul>
+<script src="js/script.js"></script>
+</body>
+</html>
